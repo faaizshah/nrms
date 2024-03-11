@@ -7,7 +7,10 @@ code/__pycache__/
 code/*.py[cod]
 code/*$py.class
 
-docker/data/*
+docker/data/databases
+docker/data/dbms
+docker/data/transactions
+
 
 # C extensions
 *.so
