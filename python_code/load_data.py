@@ -44,7 +44,7 @@ loader.create_constraints()
 
 cypher_query = """
 CALL apoc.periodic.iterate(
-  "LOAD CSV WITH HEADERS FROM 'file:///cm-radio-track-02012024_0_0_0.snappy_part_2.csv' AS row RETURN row",
+  "LOAD CSV WITH HEADERS FROM 'file:///music_radio.csv' AS row RETURN row",
   "
     MERGE (radio:Radio {id: row.RADIO_ID})
       ON CREATE SET radio.name = row.RADIO_NAME, radio.genre = row.RADIO_GENRE,
